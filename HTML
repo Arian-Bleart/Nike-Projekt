@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>RACAJ Shoe shop</title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>RACAJ Shoe shop</title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+   <!-- A button to open the popup form -->
+<button class="open-button" onclick="openForm()">Regjistrohu ne faqen tone!</button>
+
+<!-- The form -->
+<div class="form-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h1>Login</h1>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit" class="btn">Login</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+    <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+Name: <input type="text" name="fname">
+<input type="submit" value="Submit">
+</form>
+  </form>
+</div>
+    
+
+<!-- header section starts-->
+
+<div id="menu-btn" class="fas fa-bars"></div>
+
+<header class="header">
+
+   <a href="#" class="logo">NIKE</a>
+
+   <nav class="navbar">
+      <a href="#banner">Banderola</a>
+      <a href="#products">Produkti</a>
+      <a href="#reviews">Komentet </a>
+      <a href="#contact">Kontakti</a>
+   </nav>
+
+   <div class="share">
+      <a href="#" class="fab fa-facebook-f"></a>
+      <a href="#" class="fab fa-twitter"></a>
+      <a href="#" class="fab fa-instagram"></a>
+      <a href="#" class="fab fa-linkedin"></a>
+   </div>
+
+   <p class="credit"> &copy; copyright @ 2022 by Bleart&Albert </p>
+
+</header>
+
+<!-- header section ends-->
+
+<!-- banner section starts  -->
+
+<section class="banner" id="banner">
+
+   <div class="content">
+      <span>Zbritje 50% </span>
+      <h3>RACAJ shoe shop </h3>
+      <p>Ketu mund te gjeni te gjitha produktet me te reja dhe me cmimet me te mira ne treg </p>
+      <a href="#" class="btn">Blej Tani </a>
+   </div>
+
+   <div class="image">
+      <img src="images/banner-product.png" alt="">
+   </div>
+
+</section>
+
+<!-- banner section ends -->
+
+<!-- prodcuts section starts  -->
+
+<section class="products" id="products">
+
+   <h1 class="heading"> Produktet <span>Tona</span> </h1>
+
+   <div class="swiper products-slider">
+
+      <div class="swiper-wrapper">
+
+         <div class="swiper-slide slide">
+            <img src="images/New folder/projekti2.webp" alt="">
+            <h3>Air jordan 1 mid </h3>
+            <div class="btn" data-product="product-1">Shiko Detajet </div>
+         </div>
+
+         <div class="swiper-slide slide">
+            <img src="images/New folder/product-img2.jpg" alt="">
+            <h3>Nike dunk low retro </h3>
+            <div class="btn" data-product="product-2">Shiko Detajet</div>
+         </div>
+
+         <div class="swiper-slide slide">
+            <img src="images/New folder/img3.webp" alt="">
+            <h3>Nike Air Max 270   </h3>
+            <div class="btn" data-product="product-3">Shiko Detajet</div>
+         </div>
+
+         <div class="swiper-slide slide">
+            <img src="images/New folder/img4.webp" alt="">
+            <h3>Nike Air Jordan 1 </h3>
+            <div class="btn" data-product="product-4">Shiko Detajet</div>
+         </div>
+
+         <div class="swiper-slide slide">
+            <img src="images/New folder/img5.webp" alt="">
+            <h3>Nike Air Jordan 4</h3>
+            <div class="btn" data-product="product-5">Shiko Detajet</div>
+         </div>
+
+         <div class="swiper-slide slide">
+            <img src="images/New folder/img6.webp" alt="">
+            <h3>Nike Air Jordan 1 </h3>
+            <div class="btn" data-product="product-6">Shiko Detajet</div>
+         </div>
+
+      </div>
+
+   </div>
+
+</section>
+
+<!-- prodcuts section ends -->
+
+<!-- product preview section starts  -->
+
+<section class="products-preview-container">
+
+   <div class="product-preview" data-target="product-1">
+      <div class="fas fa-times"></div>
+      <div class="image">
+         <img src="images/New folder/projekti2.webp" alt="">
+      </div>
+      <div class="content">
+         <h3>Air jordan 1 mid </h3>
+         <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <span>( 250 )</span>
+         </div>
+         <div class="price">125€</div>
+         <a href="#" class="btn">Blej Tani </a>
+      </div>
+   </div>
+
+   <div class="product-preview" data-target="product-2">
+      <div class="fas fa-times"></div>
+      <div class="image">
+         <img src="images/New folder/product-img2.jpg" alt="">
+      </div>
+      <div class="content">
+         <h3>Nike Dunk Low Retro </h3> 
+         <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <span>( 250 )</span>
+         </div>
+         <div class="price">110 €</div>
+         <a href="#" class="btn">Blej Tani</a>
+      </div>
+   </div>
+
+   <div class="product-preview" data-target="product-3">
+      <div class="fas fa-times"></div>
+      <div class="image">
+         <img src="images/New folder/img3.webp" alt="">
+      </div>
+      <div class="content">
+         <h3>Nike Air Max 270 </h3>
+         <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <span>( 250 )</span>
+         </div>
+         <div class="price">70 €</div>
+         <a href="#" class="btn">Blej Tani</a>
+      </div>
+   </div>
+
+   <div class="product-preview" data-target="product-4">
+      <div class="fas fa-times"></div>
+      <div class="image">
+         <img src="images/New folder/img4.webp" alt="">
+      </div>
+      <div class="content">
+         <h3>Nike Air Jordan 1</h3>
+         <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <span>( 250 )</span>
+         </div>
+         <div class="price">220 €</div>
+         <a href="#" class="btn">Blej Tani</a>
+      </div>
+   </div>
+
+   <div class="product-preview" data-target="product-5">
+      <div class="fas fa-times"></div>
+      <div class="image">
+         <img src="images/New folder/img5.webp" alt="">
+      </div>
+      <div class="content">
+         <h3>Nike Air Jordan 4</h3>
+         <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <span>( 250 )</span>
+         </div>
+         <div class="price">170 €</div>
+         <a href="#" class="btn">Blej Tani</a>
+      </div>
+   </div>
+
+   <div class="product-preview" data-target="product-6">
+      <div class="fas fa-times"></div>
+      <div class="image">
+         <img src="images/New folder/img6.webp" alt="">
+      </div>
+      <div class="content">
+         <h3>Nike Air Jordan 1</h3>
+         <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <span>( 250 )</span>
+         </div>
+         <div class="price">100 €</div>
+         <a href="#" class="btn">Blej Tani</a>
+      </div>
+   </div>
+
+</section>
+
+<!-- product preview section ends -->
+
+<!-- services section starts  -->
+
+<section class="service">
+
+   <div class="box">
+      <i class="fas fa-shipping-fast"></i>
+      <p>Free delivery</p>
+   </div>
+
+   <div class="box">
+      <i class="fas fa-redo"></i>
+      <p>Mundesi kthimi pas 10 ditesh</p>
+   </div>
+
+   <div class="box">
+      <i class="fas fa-headset"></i>
+      <p>24/7 support</p>
+   </div>
+
+</section>
+
+<!-- services section ends -->
+
+<!-- reviews section starts  -->
+
+<section class="reviews" id="reviews">
+
+   <h1 class="heading"> Komentet e  <span>Klienteve</span> </h1>
+
+   <div class="swiper reviews-slider">
+
+      <div class="swiper-wrapper">
+
+         <div class="swiper-slide slide">
+            <i class="fas fa-quote-right"></i>
+            <p>Njera nder webfaqet me alternativat me te mira qe i ofrojn klienteve</p>
+            <h3>Bleart</h3>
+         </div>
+
+         <div class="swiper-slide slide">
+            <i class="fas fa-quote-right"></i>
+            <p>Shum i kenaqur me te gjitha porosit qe i kam marr nga RACAJ </p>
+            <h3>Erjon</h3>
+         </div>
+
+         <div class="swiper-slide slide">
+            <i class="fas fa-quote-right"></i>
+            <p>Per modelet origjinale dhe me te reja te nike webfaqja e vetme qdoher i knaqur me porosit qe kam bere </p>
+            <h3>Albert</h3>
+         </div>
+
+         <div class="swiper-slide slide">
+            <i class="fas fa-quote-right"></i>
+            <p>Qdo her porosit per veten dhe ndonje familjar i kryej te RACAJ shum i knaqur si klient i tyre </p>
+            <h3>Arlind</h3>
+         </div>
+         
+      </div>
+
+   </div>
+
+</section>
+
+<!-- reviews section ends -->
+
+<!-- contact section starts  -->
+
+<section class="contact" id="contact">
+
+   <h1 class="heading"> <span>Na</span> Kontaktoni </h1>
+
+   <div class="row">
+
+      <form action="">
+         <input type="text" placeholder="name" class="box">
+         <input type="email" placeholder="email" class="box">
+         <input type="number" placeholder="phone" class="box">
+         <textarea name="" class="box" placeholder="message" id="" cols="30" rows="10"></textarea>
+         <input type="submit" value="send message" class="btn">
+      </form>
+
+      <div class="contact-info">
+         <h3>Per pytjet e juaja ?</h3>
+         <p class="grapgh">Per te gjitha pytjet dhe paknaqesit e juaja mun te kontaktoni ketu !</p>
+         <div class="icons">
+            <i class="fas fa-map"></i>
+            <div class="info">
+               <p>Prishtina Kosova </p>
+            </div>
+         </div>
+         <div class="icons">
+            <i class="fas fa-envelope"></i>
+            <div class="info">
+               <p>ar57453@ubt-uni.net</p>
+               <p>br63183@ubt-uni.net</p>
+            </div>
+         </div>
+         <div class="icons">
+            <i class="fas fa-phone"></i>
+            <div class="info">
+               <p>+383 48 366 211</p>
+               <p>+383 45 352 706</p>
+            </div>
+         </div>
+         <div class="share">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+         </div>
+      </div>
+
+   </div>
+
+</section>
+
+<!-- contact section ends -->
+
+
+
+
+
+
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+</body>
+</html>
